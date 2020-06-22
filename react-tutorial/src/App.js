@@ -1,17 +1,14 @@
 import React from 'react';
-//import logo from './logo.svg';
-import HelloWorld from "./Components/HelloWorld"
-import Header from './Components/Header'
-import Footer from './Components/Footer'
+import Navbar from './Navbar';
+import Greeter from './Greeter';
+import './App.css';
+
 
 function App() {
   return (
-    <div>
-      <Header />
-
-      <HelloWorld name="Jacob"/>
-
-      <Footer />
+    <div className="App">
+      <Navbar />
+      <Greeter name="Jacob" age="21"/>
     </div>
   );
 }
